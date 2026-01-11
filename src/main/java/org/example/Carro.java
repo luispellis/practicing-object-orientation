@@ -10,7 +10,6 @@ public class Carro {
     public String getMarca() {
         return marca;
     }
-
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -18,20 +17,13 @@ public class Carro {
     public int getAno() {
         return ano;
     }
-
-    // Primeiro carro foi construido em 1886
     public void setAno(int ano){
-        if (ano > 1885){
-            this.ano = ano;
-        } else {
-            System.out.println("Ano Inválido");
-        }
+        this.ano = ano;
     }
 
     public String getModelo() {
         return modelo;
     }
-
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
@@ -40,11 +32,12 @@ public class Carro {
         System.out.println("O Carro está ligado");
     }
 
-    public void desligar(){
-        System.out.println("O Carro está desligado");
+    // Sobrecarga de metodos (Overload)
+    public void acelerar(){
+        System.out.println("O Carro está acelerando...");
     }
 
-    public void exibirInfo(){
-        System.out.println("Marca: "+marca+" modelo: "+modelo);
+    public void acelerar(int velocidade){
+        System.out.println("O Carro está acelerando até  "+ velocidade +" km/h");
     }
 }

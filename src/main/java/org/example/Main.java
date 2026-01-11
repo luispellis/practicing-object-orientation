@@ -6,13 +6,16 @@ public class Main {
     static void main() {
 
         Carro carro1 = new Carro();
-        carro1.marca = "Fiat Uno";
-        carro1.modelo = "Fiat";
-        carro1.ano = 2010;
+        carro1.setMarca("Fiat Uno");
+        carro1.setModelo("Fiat");
+        carro1.setAno(2016);
 
         carro1.ligar();
         carro1.exibirInfo();
         carro1.desligar();
         carro1.exibirInfo();
+
+        // Testando validação
+        carro1.setAno(1500);
     }
 }

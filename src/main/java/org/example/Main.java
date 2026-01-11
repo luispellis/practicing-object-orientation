@@ -5,17 +5,15 @@ package org.example;
 public class Main {
     static void main() {
 
-        Carro carro1 = new Carro();
-        carro1.setMarca("Fiat Uno");
-        carro1.setModelo("Fiat");
-        carro1.setAno(2016);
+        CarroEsportivo ferrari = new CarroEsportivo();
+        ferrari.setMarca("Ferrari");
+        ferrari.setModelo("488 Spider");
+        ferrari.setAno(2018);
+        ferrari.setVelocidadeMaxima(330);
 
-        carro1.ligar();
-        carro1.exibirInfo();
-        carro1.desligar();
-        carro1.exibirInfo();
-
-        // Testando validação
-        carro1.setAno(1500);
+        ferrari.ligar();
+        ferrari.exibirInfo();
+        ferrari.ativarModoTurbo();
+        ferrari.desligar();
     }
 }
